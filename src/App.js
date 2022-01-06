@@ -7,6 +7,8 @@ import LoginForm from "./components/loginform";
 const projectID = "74d1ebe5-3a7d-4c35-9861-a3daff5636cc";
 
 const App = () => {
+  // localStorage.clear()
+  // console.log(localStorage.getItem("username"))
   if (!localStorage.getItem("username")) {
     return <LoginForm /> ;
   }
